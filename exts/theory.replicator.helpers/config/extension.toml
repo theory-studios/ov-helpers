@@ -14,7 +14,7 @@ description="Extension for helper nodes and functions for Replicator"
 readme  = "docs/README.md"
 
 # URL of the extension source repository.
-repository="https://gitlab-master.nvidia.com/omniverse/kit-extensions/example"
+repository="https://github.com/theory-studios/ov-helpers"
 
 # One of categories for UI.
 category = "Simulation"
