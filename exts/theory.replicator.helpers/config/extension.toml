@@ -1,0 +1,43 @@
+
+[package]
+# Semantic Versioning is used: https://semver.org/
+version = "1.0.0"
+
+# Lists people or organizations that are considered the "authors" of the package.
+authors = ["Theory Studios"]
+
+# The title and description fields are primarly for displaying extension info in UI
+title = "Theory Replicator Helpers"
+description="Extension for helper nodes and functions for Replicator"
+
+# Path (relative to the root) or content of readme markdown file for UI.
+readme  = "docs/README.md"
+
+# URL of the extension source repository.
+repository="https://gitlab-master.nvidia.com/omniverse/kit-extensions/example"
+
+# One of categories for UI.
+category = "Simulation"
+
+# Keywords for the extension
+keywords = ["kit", "omnigraph"]
+changelog = "docs/CHANGELOG.md"
+icon = "data/icon.png"
+
+# Watch the .ogn files for hot reloading (only works for Python files)
+[fswatcher.patterns]
+include = ["*.ogn", "*.py"]
+exclude = ["Ogn*Database.py"]
+
+[dependencies]
+"omni.kit.test" = {}
+"omni.graph" = {}
+"omni.replicator.core" = {}
+
+# Main python module this extension provides, it will be publicly available as "import theory.replicator.helpers".
+[[python.module]]
+name = "theory.replicator.helpers"
+
+# Additional python module with tests, to make them discoverable by test system.
+[[python.module]]
+name = "theory.replicator.helpers.ogn.tests"

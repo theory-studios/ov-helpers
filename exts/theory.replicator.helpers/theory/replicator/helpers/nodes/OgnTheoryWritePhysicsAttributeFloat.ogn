@@ -1,0 +1,35 @@
+{
+    "OgnTheoryWritePhysicsAttributeFloat": {
+        "version": 1,
+        "description": "Write physics attributes.  To be used after write physics node. Must be a float value",
+        "language": "Python",
+		"scheduling": "compute-on-request",
+        "inputs": {
+            "execIn": {
+                "type": "execution",
+                "description": "exec",
+                "default": 0
+            },
+            "prims": {
+                "type": "bundle",
+                "description": "Prims to prep for processing"
+            },
+            "attribute": {
+                "type": "string",
+                "description": "Name of attribute that is to be written",
+                "default": ""
+            },
+            "valueFloat": {
+                "type": "float",
+                "description": "Float value to be assigned to the attribute",
+                "default": 0.0
+            }
+        },
+        "outputs": {
+            "execOut": {
+                "type": "execution",
+                "description": "exec"
+            }
+        }
+    }
+}

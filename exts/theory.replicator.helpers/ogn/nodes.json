@@ -1,0 +1,10 @@
+{
+    "nodes": {
+        "theory.replicator.helpers.OgnTheoryWritePhysicsAttributeFloat": {
+            "description": "Write physics attributes.  To be used after write physics node. Must be a float value",
+            "version": 1,
+            "extension": "theory.replicator.helpers",
+            "language": "Python"
+        }
+    }
+}
